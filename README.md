@@ -7,7 +7,7 @@ A curated list of notable ETL (extract, transform, load) frameworks, libraries a
     - [Python](#python)
     - [Ruby](#ruby)
     - [Go](#go)
-    - [Java] (#java)
+    - [Java](#java)
     - [Talks/Articles](#talksarticles-1)
     - [Cloud Services](#cloud-services)
     - [Big Data (Hadoop Stack)](#big-data-hadoop-stack)
@@ -31,7 +31,7 @@ A curated list of notable ETL (extract, transform, load) frameworks, libraries a
 
 ## Java
 * [DataPipeLine](https://www.northconcepts.com/) - Java library for running performance oriented flows
-* [GETL](https://sourceforge.net/projects/getl/) - Groovy toolbox for ETL Tasks from practicing architectures
+* [GETL](https://github.com/ascrus/getl) - Groovy toolbox for ETL Tasks from practicing architectures
 * [JSR 352](https://www.jcp.org/en/jsr/detail?id=352) - Java native API for batch processing
 * [Scriptella](http://scriptella.org/) - Java-XML ETL toolbox for every day use.
 * [Spring Batch](http://projects.spring.io/spring-batch/) - ETL on Spring ecosystem
@@ -40,6 +40,7 @@ A curated list of notable ETL (extract, transform, load) frameworks, libraries a
 ### Libraries
 * [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/) - Popular library used to extract data from web pages.
 * [Blaze](https://github.com/blaze/blaze) - "translates a subset of modified NumPy and Pandas-like syntax to databases and other computing systems."
+* [Bonobo](https://www.bonobo-project.org/) - Simple, modern and atomic data transformation graphs for Python 3.5+.
 * [Bubbles](https://github.com/stiivi/bubbles) - "a Python ETL Framework and set of tools. It can be used for processing, auditing and inspecting data. Focus is on understandability and transparency of the process."
 * [Celery](http://www.celeryproject.org/) - "an asynchronous task queue/job queue based on distributed message passing. It is focused on real-time operation, but supports scheduling as well."
 * [Dask](https://github.com/blaze/dask) - Ever tried using Pandas to process data that won't fit into memory? Dask makes it easy. Dask also has functionality to make it easy to processing continuous streams of data.
@@ -50,9 +51,11 @@ A curated list of notable ETL (extract, transform, load) frameworks, libraries a
 * [MrJob](https://pythonhosted.org/mrjob/) - "lets you write MapReduce jobs in Python 2.6+ and run them on several platforms. The easiest route to writing Python programs that run on Hadoop."
 * [Odo](https://github.com/blaze/odo) - Moves data across containers (SQL, CSV, MongoDB, Pandas, etc). Claims to be the easiest and fastest way to load a CSV into your database.
 * [Pandas](http://pandas.pydata.org/) - Implements dataframes in Python for easier data processing and includes a number of tools that make it easier to extract data from multiple file formats.
+* [parse](https://github.com/r1chardj0n3s/parse) - The opposite of Python's format(). Easier to use than regex, but more limited.
 * [PETL](https://github.com/alimanfoo/petl) - "a general purpose Python package for extracting, transforming and loading tables of data." Slower than Pandas and not as good for larger amounts of data, but simpler.
 * [PyQuery](https://pythonhosted.org/pyquery/) - Extracts data from web pages with a jquery-like syntax.
 * [Retrying](https://github.com/rholder/retrying) - Allows you to add a decorator to any function/method to retry on an exception.
+* [Requests-HTML](https://github.com/kennethreitz/requests-html) - Combines PyQuery, Requests, parse, and other libraries for a pleasant and intuitive web scraping experience.
 * [riko](https://github.com/nerevu/riko) - A python stream processing engine modeled after Yahoo! Pipes.
 * [Ruffus](https://pypi.python.org/pypi/ruffus) - "The Ruffus module is a lightweight way to add support for running computational pipelines."
 * [SQLAlchemy](http://www.sqlalchemy.org/) - "the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL."
@@ -64,9 +67,10 @@ A curated list of notable ETL (extract, transform, load) frameworks, libraries a
 * http://www.parsely.com/misc/slides/streamparse/notes/
 
 ## Ruby
-* [Kiba](https://github.com/thbar/kiba) - "provides you with a DSL to define ETL jobs"
+* [Kiba](https://github.com/thbar/kiba) - "Data processing & ETL framework for Ruby"
 * [nokogiri](https://github.com/sparklemotion/nokogiri) - an excellent XML parser that "just works"
 * [Square ETL](https://github.com/square/etl)
+* [Sequel](https://github.com/jeremyevans/sequel) - "The Database Toolkit for Ruby"
 
 ## Go
 * [Crunch](https://github.com/jondot/crunch) - "A fast to develop, fast to run, Go based toolkit for ETL and feature extraction on Hadoop."
@@ -87,9 +91,10 @@ A curated list of notable ETL (extract, transform, load) frameworks, libraries a
 * http://tech.adroll.com/blog/data/2015/10/15/luigi.html?adrolldev
 
 ## Cloud Services
-* [Alterxy](http://www.alteryx.com/) - Cloud ETL tool with an interface similar to GUI ETL tools.
-* [Amazon Data Pipeline](https://aws.amazon.com/datapipeline/) - "a web service that helps you reliably process and move data between different AWS compute and storage services, as well as on-premise data sources, at specified intervals."
-* [Amazon SWF](https://aws.amazon.com/swf/) - "helps developers build, run, and scale background jobs that have parallel or sequential steps. You can think of Amazon SWF as a fully-managed state tracker and task coordinator in the Cloud."
+* [Alteryx](http://www.alteryx.com/) - Cloud ETL tool with an interface similar to GUI ETL tools.
+* [AWS Data Pipeline](https://aws.amazon.com/datapipeline/) - "a web service that helps you reliably process and move data between different AWS compute and storage services, as well as on-premise data sources, at specified intervals."
+* [AWS Glue](https://aws.amazon.com/glue/) - AWS Glue generates the code (using Python and Spark) to execute your data transformations and data loading processes.
+* [Amazon Simple Workflow Service (SWF)](https://aws.amazon.com/swf/) - "helps developers build, run, and scale background jobs that have parallel or sequential steps. You can think of Amazon SWF as a fully-managed state tracker and task coordinator in the Cloud."
 * [AWS Batch](https://aws.amazon.com/batch/) - Allows executing jobs as containerized applications running on Amazon ECS. Also includes features for dynamically bidding for Spot Instances, integration with existing workflow engines, scheduling, monitoring, dependency modeling, and dynamic scaling/provisioning based on amount of work.
 * [Google Dataflow](https://cloud.google.com/dataflow/what-is-google-cloud-dataflow) - "Google Cloud Dataflow provides a simple, powerful model for building both batch and streaming parallel data processing pipelines."
 * [Snaplogic](http://www.snaplogic.com/) - "a self-upgrading, elastic execution grid that streams data between applications, databases, files, social and big data sources."
